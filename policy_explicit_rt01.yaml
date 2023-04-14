@@ -1,10 +1,12 @@
 # policy_explicit_rt01.yaml
 srPolicy:
-  pcepSessionAddr: "fd00::1"
+  pcepSessionAddr: "fc00::1"
   srcAddr: "fd00:ffff::1"
   dstAddr: "2a0b:2542:400:2:1::"
   name: vrf-100-policy-pcc-rt02-by-pola
   color: 100
   segmentList:
+    - sid: "2a0b:2542:400:3:1::"
+      nai: "fd00:ffff::3"
     - sid: "2a0b:2542:400:2:1::"
       nai: "fd00:ffff::2"
